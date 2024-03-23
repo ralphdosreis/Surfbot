@@ -1,56 +1,8 @@
-body,
-ul,
-li,
-h1,
-h2,
-p,
-a {
-  margin: 0px;
-  padding: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header-info {
-  background: #1188ee;
-}
-
-.header-info p {
-  font-family: "Nunito", Arial, Helvetica, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.33;
-  font-weight: 700;
-  padding: 4px 0px 4px 40px;
-  color: #fff;
-}
-
-.header-bg {
-  background: #18232e;
-}
-
-.header-conteudo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header img {
-  margin: 10px 0px 10px 40px;
-}
-
-.nav {
-  display: flex;
-  gap: 20px;
-  margin-right: 40px;
-}
-
-.nav a {
-  font-family: "Nunito", Arial, Helvetica, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.33;
-  font-weight: 700;
-  color: #fff;
-}
+@import "./secoes/global.css";
+@import "./secoes/header.css";
+@import "./secoes/home.css";
+@import "./secoes/praia.css";
+@import "./secoes/aulas.css";
+@import "./secoes/quote.css";
+@import "./secoes/contato.css";
+@import "./secoes/footer.css";

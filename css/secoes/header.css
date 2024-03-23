@@ -1,0 +1,38 @@
+.header-info-bg {
+  background: #1188ee;
+}
+
+.header-info {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.33;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header-bg {
+  background: #18232e;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.header-menu a {
+  font-family: "Nunito", sans-serif;
+  font-size: .875rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #fff;
+}

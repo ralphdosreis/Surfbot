@@ -1,0 +1,19 @@
+.footer-bg {
+  background: #1188ee;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #fff;
+}

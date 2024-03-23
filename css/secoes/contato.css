@@ -1,0 +1,69 @@
+.contato {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contato h2 {
+  text-align: center;
+  font-family: "Alice", serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #18232e;
+  margin-bottom: 30px;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+/* Conteudo */
+
+.titulo-info {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #18232e;
+  margin-bottom: 5px;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info li,
+.info a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  line-height: 1.33;
+  font-weight: 400;
+  color: #18232e;
+}
+
+.mapa-botao {
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #18232e;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.mapa-botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.mapa-botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  margin-left: 5px;
+  background: url("../../img/seta-laranja.svg");
+}

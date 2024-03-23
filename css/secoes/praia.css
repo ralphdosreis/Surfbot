@@ -1,0 +1,84 @@
+.praia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 60px;
+}
+
+.empresa::after {
+  content: "";
+  display: inline-block;
+  background: url(/img/mapa.jpg);
+  width: auto;
+  height: auto;
+}
+
+.como-chegar h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #18232e;
+  text-transform: uppercase;
+}
+
+.como-chegar p {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #6C7782;
+  display: flex;
+  align-items: center;
+}
+
+.como-chegar p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background: #1188ee;
+  margin-right: 4px;
+}
+
+/* conteudo */
+.praia-conteudo h2 {
+  font-family: "Alice", serif;
+  font-size: 4.5rem;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #18232e;
+  margin-bottom: 60px;
+}
+
+.praia-conteudo h2 span {
+  color: #1188ee;
+}
+
+.info-praia {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.info-praia p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  font-weight: 400;
+  color: #445566;
+}
+
+.texto-praia p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: 400;
+  color: #445566;
+}
+
+.texto-praia p + p {
+  margin-top: 10px;
+}
