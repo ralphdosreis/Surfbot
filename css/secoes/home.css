@@ -4,15 +4,22 @@
   height: 400px;
   background-image: url("/img/bg-intro.jpg");
   background-size: cover;
+  display: grid;
+  align-items: end;
 }
 
 .home {
   display: flex;
+  justify-content:space-between;
   align-items: center;
+  
+}
+
+.matricular {
+  display: flex;
 }
 
 .home h1 {
-  position: absolute;
   bottom: 40px;
   font-family: "Alice", serif;
   font-size: 4.5rem;
@@ -21,22 +28,27 @@
   color: #fff;
 }
 
-form {
-  display: inline-block;
-  bottom: 40px;
-  right: 10px;
-  margin: 0;
+.form-home input {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #18232e;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  width: 250px;
+  box-sizing: border-box;
 }
 
 .botao-home {
-  position: absolute;
   bottom: 40px;
-  display: inline-block;
   background: #ee2211;
-  padding: 10px 20px;
+  padding: 12px 16px;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
-  line-height: 1.33;
+  line-height: 1;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
