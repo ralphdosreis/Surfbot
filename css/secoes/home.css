@@ -1,31 +1,25 @@
 .home-bg {
-  position: relative;
   width: 100%;
   height: 400px;
   background-image: url("/img/bg-intro.jpg");
   background-size: cover;
-  display: grid;
-  align-items: end;
-}
-
-.home {
   display: flex;
-  justify-content:space-between;
-  align-items: center;
-  
+  align-items: end;
 }
 
 .matricular {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-.home h1 {
-  bottom: 40px;
+.titulo-home {
   font-family: "Alice", serif;
   font-size: 4.5rem;
   line-height: 1;
   font-weight: 400;
   color: #fff;
+  margin-bottom: 40px;
 }
 
 .form-home input {

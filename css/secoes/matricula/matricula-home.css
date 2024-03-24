@@ -1,0 +1,16 @@
+.matricula-home {
+  background: #eff4f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.matricula-titulo {
+  text-align: center;
+  font-family: "Alice", serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #18232e;
+}
+
+
