@@ -31,8 +31,22 @@
 
 .header-menu a {
   font-family: "Nunito", sans-serif;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.33;
   font-weight: 700;
   color: #fff;
+}
+
+.header-menu a:hover {
+  color: #ee2211;
+}
+
+.circulo {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 32px;
+  -webkit-mask-image: radial-gradient(transparent 20%, #18232e 50%);
 }

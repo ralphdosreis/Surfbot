@@ -6,12 +6,21 @@
   gap: 60px;
 }
 
-.empresa::after {
+.empresa-praia {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.empresa-praia::after {
   content: "";
   display: inline-block;
+  width: 520px;
+  height: 240px;
   background: url(/img/mapa.jpg);
-  width: auto;
-  height: auto;
+  position: absolute;
+  top: 490px;
+  left: 13px;
+  border-radius: 4px;
 }
 
 .como-chegar h2 {
@@ -54,6 +63,10 @@
 
 .praia-conteudo h2 span {
   color: #1188ee;
+}
+
+.lista-praia {
+  margin-bottom: 60px;
 }
 
 .info-praia {

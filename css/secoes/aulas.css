@@ -44,6 +44,7 @@
 
 .planos-vantagens {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .planos-vantagens li {
@@ -54,6 +55,14 @@
   color: #445566;
   margin-bottom: 8px;
   margin-top: 8px;
+}
+
+.planos-vantagens::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background: #d9d9d9;
 }
 
 .planos-vantagens::after {
