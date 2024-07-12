@@ -1,0 +1,205 @@
+.praia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.foto-empresa {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.foto-empresa::after {
+  content: '';
+  display: inline-block;
+  width: 520px;
+  height: 240px;
+  background: url('/img/mapa.jpg');
+  position: absolute;
+  top: 500px;
+  left: 18px;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center top;
+}
+
+.praia-chegar {
+  display: flex;
+  flex-direction: column;
+}
+
+.praia-chegar h2 {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: .875rem;
+  color: #18232e;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.praia-chegar h2::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #EE2211;
+  border-radius: 50%;
+  margin-right: 4px;
+  -webkit-mask-image: radial-gradient(transparent 20%, #EE2211 50%);
+}
+
+.praia-chegar p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #6c7782;
+  display: flex;
+  align-items: center;
+}
+
+.praia-chegar p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background: #1188ee;
+  margin-right: 4px;
+}
+
+.praia-chegar span {
+  color: #d2d2d2;
+  margin-left: 4px;
+}
+
+.praia-chegar span:hover {
+  color: #6c7782;
+  cursor: pointer;
+}
+
+.praia-sobre {
+  display: grid;
+}
+
+.praia-sobre .titulo {
+  line-height: 1.2;
+  color: #18232E;
+  margin-bottom: 30px;
+}
+
+.praia-sobre span {
+  color: #1188EE;
+}
+
+.info-item {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #445566;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.sandalia::before {
+  content: "";
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background: url("/img/sandalia.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.coco::before {
+  content: "";
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background: url("/img/coco.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.boia::before {
+  content: "";
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background: url("/img/boia.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.praia-texto p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #445566;
+}
+
+.praia-texto p + p {
+  margin-top: 25px;
+}
+
+@media (max-width: 1150px) {
+  .foto-empresa {
+    margin-bottom: 30px;
+  }
+  .foto-empresa::after {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .praia-sobre h1 {
+    font-size: 3.75rem;
+  }
+  .sandalia::before, .coco::before, .boia::before {
+    width: 48px;
+    height: 48px;
+  }
+  .praia-texto p {
+    font-size: 1rem;
+  }
+  .praia-texto p + p {
+    margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .praia {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .foto-empresa {
+    display: none;
+  }
+  .praia-chegar {
+    display: none;
+  }
+  .praia-sobre h1 {
+    text-align: center;
+  }
+  .praia-info {
+    justify-self: center;
+  }
+  .praia-texto p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .praia {
+    padding: 30px 10px;
+  }
+}
