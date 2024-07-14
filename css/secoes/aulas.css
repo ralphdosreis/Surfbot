@@ -1,0 +1,156 @@
+.aulas-bg {
+  background: #eff4f9;
+}
+
+.aulas {
+  padding: 60px 20px;
+}
+
+.aulas .titulo {
+  color: #18232e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.aulas-tipos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.container-aula {
+  width: 240px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 4px rgba(0,0,0,.2);
+  border-radius: 4px;
+  display: grid;
+  justify-content: center;
+}
+
+.titulo-aula {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #445566;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.vantagens-aula {
+  margin-bottom: 30px;
+}
+
+.vantagens-aula::before, .vantagens-aula::after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background: #ececec;
+}
+
+.vantagens-aula li {
+  font-family: 'Nunito', sans-serif;
+  font-size: .875rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #445566;
+  display: flex;
+}
+
+.vantagens-aula li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #ff3726;
+  border-radius: 50%;
+  margin-right: 5px;
+  -webkit-mask-image: radial-gradient(transparent 20%, #ff3726 50%);
+  align-self: center;
+}
+
+.aula-valor {
+  font-family: 'Nunito', sans-serif;
+  font-size: .875rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #1188ee;
+  margin-bottom: 30px;
+}
+
+.botao {
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: .875rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  background: #445566;
+  padding: 10px 15px;
+  border-radius: 4px;
+  max-width: max-content;
+}
+
+.botao-seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  margin-left: 30px;
+  background: url("/img/seta.svg");
+}
+
+.grupo {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: center;
+}
+
+.grupo span {
+  color: #EE2211;
+}
+
+.grupo a {
+  color: #000;
+  display: inline-block;
+  position: relative;
+}
+
+.grupo a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #ee2211;
+  position: absolute;
+}
+
+@media (max-width: 1000px) {
+  .titulo-aulas {
+    font-size: 3.75rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .aulas {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grupo {
+    font-size: 1rem;
+  }
+}
