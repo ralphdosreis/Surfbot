@@ -1,0 +1,44 @@
+.quote-bg {
+  background: url("/img/foto-quote.jpg");
+  height: 330px;
+  background-size: cover;
+}
+
+.quote {
+  padding: 60px 10px;
+}
+
+.quote .titulo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quote p {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .quote-bg {
+    height: 260px;
+  }
+  .quote {
+    padding: 30px 10px;
+  }
+  .quote .titulo {
+    font-size: 3.75rem;
+  }
+  .quote p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .quote .titulo {
+    margin-bottom: 15px;
+  }
+}
