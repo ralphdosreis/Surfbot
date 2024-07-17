@@ -1,0 +1,168 @@
+.contato {
+  padding: 60px 20px;
+}
+
+.contato .titulo {
+  text-align: center;
+  color: #18232E;
+}
+
+.contato-secoes {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-items: center;
+  gap: 60px;
+}
+
+.formulario-contato {
+  display: grid;
+  justify-self: end;
+}
+
+.form div {
+  margin-bottom: 15px;
+}
+
+.form label {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #18232E;
+  margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font-family: "Nunito", sans-serif;
+  font-size: .875rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #18232e;
+  background: #EFF4F9;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #1188EE;
+  box-shadow: 0 0 0 2px #DDEEEE;
+}
+
+.linha-vertical {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background: #ECECEC;
+}
+
+.contato-conteudo {
+  justify-self: start;
+}
+
+.secao:nth-child(-n+2)::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: #ececec;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.secao h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #18232E;
+  margin-bottom: 5px;
+}
+
+.secao p, .secao a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #18232E;
+}
+
+.secao .mapa-botao {
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #18232e;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.secao .mapa-botao.seta {
+  display: flex;
+  align-self: center;
+}
+
+.mapa-botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  margin-left: 5px;
+  background: url("/img/seta-laranja.svg");
+}
+
+@media (max-width: 800px) {
+  .contato {
+    padding: 30px 10px;
+  }
+  .form label {
+    font-size: 1rem;
+  }
+  .secao h2 {
+    font-size: 1rem;
+  }  
+  .secao p, .secao a {
+    font-size: 1rem;
+  }
+  .secao .mapa-botao {
+    font-size: .875rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-secoes {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .formulario-contato {
+    justify-self: start;
+  }
+  .formulario-contato::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: #ececec;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contato-conteudo {
+    justify-self: start;
+  }
+  .secao:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .secao:nth-child(-n+2)::after {
+    display: none;
+  }
+}
