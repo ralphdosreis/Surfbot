@@ -13,3 +13,9 @@
   line-height: 1.4;
   color: #fff;
 }
+
+@media (max-width: 800px) {
+  .funcionamento {
+    padding: 10px;
+  }
+}
