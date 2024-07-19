@@ -1,0 +1,35 @@
+.footer-bg {
+  background: #1188EE;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding: 30px 10px;
+  }
+  .footer h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer h1 {
+    font-size: 1.25rem;
+  }
+}
