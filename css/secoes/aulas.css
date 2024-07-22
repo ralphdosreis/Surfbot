@@ -94,6 +94,7 @@
   padding: 10px 15px;
   border-radius: 4px;
   max-width: max-content;
+  text-transform: uppercase;
 }
 
 .botao-seta {

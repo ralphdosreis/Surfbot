@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surfbot</title>
+    <link rel="shortcut icon" type="image/svg" href="/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.className += ' .js';
+    </script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header-bg">
+      <div class="container header">
+        <a href="/index.html"
+          ><img src="/img/surfbot-logo.svg" alt="Surfbot"
+        /></a>
+        <nav>
+          <ul class="header-menu">
+            <li><a href="/index.html">Praia</a></li>
+            <li><a href="/index.html">Aulas</a></li>
+            <li><a href="/index.html">Contato</a></li>
+            <li><a href="/matricula/infantil.html">Matricule-se</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="matricula-bg">
+      <div class="secao-titulo">
+        <h1 class="titulo">Aulas</h1>
+      </div>
+      <div class="container matricula">
+        <form action="form-matricula">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="contato@email.com">
+          </div>
+          <div>
+            <label for="cpf">CPF</label>
+            <input type="cpf" name="cpf" id="cpf" placeholder="000.000.000-00">
+          </div>
+          <div class="endereco">
+            <div>
+              <label for="endereco">Endereço</label>
+              <input type="text" name="endereco" id="endereco" placeholder="Rua, Número e Bairro">
+            </div>
+            <div>
+              <label for="estado">Estado</label>
+              <input type="text" name="estado" id="estado" placeholder="Selecione o Estado">
+            </div>
+            <div>
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep" placeholder="11.111-11">
+            </div>
+            <div>
+              <label for="cidade">Cidade</label>
+              <input type="text" name="cidade" id="cidade" placeholder="Selecione a Cidade">
+            </div>
+          </div>
+        </form>
+        <div class="pagamento">
+          <div class="forma-pagamento">
+            <input type="radio" name="tipo" value="cartao" id="cartao">
+            <label for="cartao">Cartão de Crédito</label>
+            <input type="radio" name="tipo" value="boleto" id="boleto">
+            <label for="cartao">Boleto Bancário</label>
+          </div>
+          <div class="dados-pagamento">
+            <form action="form-pagamento">
+              <div class="dados-cartao">
+                <div>
+                  <label for="nome-cartao">Nome no Cartão</label>
+                  <input type="text" name="nome-cartao" id="nome-cartao" placeholder="Nome impresso no cartão">
+                </div>
+                <div>
+                  <label for="data-cartao">Data de Expiração</label>
+                  <div class="data-expiracao">
+                    <input type="text" id="mes" name="mes" placeholder="Mês">
+                    <input type="text" id="ano" name="ano" placeholder="Ano">
+                  </div>
+                </div>
+                <div>
+                  <label for="numero-cartao">Número do Cartão</label>
+                  <input type="text" name="numero-cartao" id="numero-cartao" placeholder="5555.5555.5555-555">
+                </div>
+                <div>
+                  <label for="codigo-cartao">Código de segurança</label>
+                  <input type="text" name="codigo-cartao" id="codigo-cartao" placeholder="XXX">
+                </div>
+              </div>
+            </form>
+            <p>Seu cartão será debitado em R$49,00</p>
+            <a class="botao" href="">Realizar matrícula</a>
+            <span class="info-seguranca">Informações seguras e criptografadas</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
