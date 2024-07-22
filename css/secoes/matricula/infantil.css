@@ -1,0 +1,10 @@
+.secao-titulo {
+  background: #EFF4F9;
+}
+
+.secao-titulo .titulo {
+  color: #18232E;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
