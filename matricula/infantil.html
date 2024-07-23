@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,22 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@200..1000&display=swap"
       rel="stylesheet"
     />
     <script>
-      document.documentElement.className += ' .js';
+      document.documentElement.className += ' js';
     </script>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
+
   <body>
     <header class="header-bg">
-      <div class="container header">
-        <a href="/index.html"
+      <div class="header container">
+        <a class="logo" href="/index.html"
           ><img src="/img/surfbot-logo.svg" alt="Surfbot"
         /></a>
-        <nav>
-          <ul class="header-menu">
+        <nav data-menu="suave">
+          <ul data-menu="list" id="menu" class="header-menu">
             <li><a href="/index.html">Praia</a></li>
             <li><a href="/index.html">Aulas</a></li>
             <li><a href="/index.html">Contato</a></li>
@@ -32,80 +33,173 @@
         </nav>
       </div>
     </header>
-    <main class="matricula-bg">
-      <div class="secao-titulo">
+
+    <section>
+      <div class="titulo-bg">
         <h1 class="titulo">Aulas</h1>
       </div>
-      <div class="container matricula">
-        <form action="form-matricula">
-          <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Seu nome">
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="contato@email.com">
-          </div>
-          <div>
-            <label for="cpf">CPF</label>
-            <input type="cpf" name="cpf" id="cpf" placeholder="000.000.000-00">
-          </div>
-          <div class="endereco">
-            <div>
-              <label for="endereco">Endereço</label>
-              <input type="text" name="endereco" id="endereco" placeholder="Rua, Número e Bairro">
-            </div>
-            <div>
-              <label for="estado">Estado</label>
-              <input type="text" name="estado" id="estado" placeholder="Selecione o Estado">
-            </div>
-            <div>
-              <label for="cep">CEP</label>
-              <input type="text" id="cep" name="cep" placeholder="11.111-11">
-            </div>
-            <div>
-              <label for="cidade">Cidade</label>
-              <input type="text" name="cidade" id="cidade" placeholder="Selecione a Cidade">
-            </div>
-          </div>
-        </form>
-        <div class="pagamento">
-          <div class="forma-pagamento">
-            <input type="radio" name="tipo" value="cartao" id="cartao">
-            <label for="cartao">Cartão de Crédito</label>
-            <input type="radio" name="tipo" value="boleto" id="boleto">
-            <label for="cartao">Boleto Bancário</label>
-          </div>
-          <div class="dados-pagamento">
-            <form action="form-pagamento">
-              <div class="dados-cartao">
+      <div class="escolha container">
+        <div>
+          <div class="formulario-contato">
+            <form class="form">
+              <div>
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Seu nome"
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="contato@email.com"
+                />
+              </div>
+              <div>
+                <label for="CPF">CPF</label>
+                <input
+                  type="text"
+                  id="CPF"
+                  name="CPF"
+                  placeholder="000.000.000-00"
+                />
+              </div>
+              <div class="endereco">
                 <div>
-                  <label for="nome-cartao">Nome no Cartão</label>
-                  <input type="text" name="nome-cartao" id="nome-cartao" placeholder="Nome impresso no cartão">
+                  <label for="CEP">CEP</label>
+                  <input type="text" id="cep" name="cep" />
                 </div>
                 <div>
-                  <label for="data-cartao">Data de Expiração</label>
-                  <div class="data-expiracao">
-                    <input type="text" id="mes" name="mes" placeholder="Mês">
-                    <input type="text" id="ano" name="ano" placeholder="Ano">
+                  <label for="endereco">Endereço</label>
+                  <input type="text" id="endereco" name="endereco" />
+                </div>
+                <div>
+                  <label for="cidade">Cidade</label>
+                  <input type="text" id="cidade" name="cidade" />
+                </div>
+                <div>
+                  <label for="estado">Estado</label>
+                  <input type="text" id="estado" name="estado" />
+                </div>
+              </div>
+              <h2 class="titulo-pagamento">Forma de Pagamento</h2>
+              <div class="forma">
+                <input type="radio" name="tipo" value="cartao" id="cartao" />
+                <label for="cartao">Cartão de Crédito</label>
+                <input type="radio" name="tipo" value="boleto" id="boleto" />
+                <label for="boleto">Boleto Bancário</label>
+              </div>
+              <div class="pagamento-foma">
+                <div>
+                  <label for="nome-cartao">Nome no Cartão</label>
+                  <input
+                    type="text"
+                    name="nome-cartao"
+                    id="nome-cartao"
+                    placeholder="Nome impresso no cartão"
+                  />
+                </div>
+                <div class="data-cartao">
+                  <label for="data-expiracao">Data de Expiração</label>
+                  <div class="data-input">
+                    <input type="text" name="mes" placeholder="Mês" />
+                    <input type="text" name="ano" placeholder="Ano" />
                   </div>
                 </div>
                 <div>
                   <label for="numero-cartao">Número do Cartão</label>
-                  <input type="text" name="numero-cartao" id="numero-cartao" placeholder="5555.5555.5555-555">
+                  <input
+                    type="text"
+                    name="numero-cartao"
+                    placeholder="5555.5555.5555.555"
+                  />
                 </div>
-                <div>
+                <div class="codigo-cartao">
                   <label for="codigo-cartao">Código de segurança</label>
-                  <input type="text" name="codigo-cartao" id="codigo-cartao" placeholder="XXX">
+                  <input type="text" name="codigo-cartao" placeholder="XXX" />
                 </div>
               </div>
             </form>
-            <p>Seu cartão será debitado em R$49,00</p>
-            <a class="botao" href="">Realizar matrícula</a>
-            <span class="info-seguranca">Informações seguras e criptografadas</span>
+          </div>
+          <p class="aviso-debito">Seu cartão será debitado em R$49,00</p>
+          <a class="botao azul" href="">Realizar matrícula</a>
+          <p class="seguranca">Informações seguras e criptografadas</p>
+        </div>
+        <div class="escolha-plano">
+          <h2>Escolha o Plano</h2>
+          <ul class="opcao">
+            <li class="activo">
+              <input type="radio" name="tipo" value="infantil" id="infantil" />
+              <label for="infantil">Infantil</label>
+            </li>
+            <li>
+              <input type="radio" name="tipo" value="adulto" id="adulto" />
+              <label for="adulto">Adulto</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="tipo"
+                value="profissional"
+                id="profissional"
+              />
+              <label for="profissional">Profissional</label>
+            </li>
+          </ul>
+          <div class="container-aula">
+            <h2 class="titulo-aula">Infantil</h2>
+            <div class="vantagens">
+              <ul class="vantagens-aula">
+                <li>Público entre 5 e 10 anos</li>
+                <li>Equipamentos fornecidos</li>
+                <li>Horários de Sex. à Sab</li>
+                <li>2 horas seguidas de aula</li>
+              </ul>
+              <p class="valor-aula">R$49,00 / Aula</p>
+              <a class="botao seta" href="./matricula.html">Matricule-se</a>
+            </div>
+          </div>
+          <div class="container-aula none">
+            <h2 class="titulo-aula">Adulto</h2>
+            <div class="vantagens">
+              <ul class="vantagens-aula">
+                <li>Público entre 16 e 80 anos</li>
+                <li>Equipamentos fornecidos</li>
+                <li>Horários de Sex. à Sab</li>
+                <li>3 horas seguidas de aula</li>
+              </ul>
+              <p class="valor-aula">R$69,00 / Aula</p>
+              <a class="botao seta" href="./matricula.html">Matricule-se</a>
+            </div>
+          </div>
+          <div class="container-aula none">
+            <h2 class="titulo-aula">Profissional</h2>
+            <div class="vantagens">
+              <ul class="vantagens-aula">
+                <li>Experiência de 3 anos no surf</li>
+                <li>Você deve trazer o equipamento</li>
+                <li>Horários de Sex. à Sab.</li>
+                <li>4 horas seguidas de aula</li>
+              </ul>
+              <p class="valor-aula">R$99,00 / Aula</p>
+              <a class="botao seta" href="./matricula.html">Matricule-se</a>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
+
+    <footer class="footer-bg">
+      <div class="footer container">
+        <h1>Surfnet 2017 - Alguns Direitos Reservados.</h1>
+        <img src="/img/prancha-branca.svg" alt="Prancha" />
+      </div>
+    </footer>
+    <script src="/main.js"></script>
   </body>
 </html>
