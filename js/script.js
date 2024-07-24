@@ -1,2 +1,2 @@
-import initTeste from './modules/teste.js';
-initTeste();
+import initScrollSuave from './modules/scroll-suave.js';
+initScrollSuave();
