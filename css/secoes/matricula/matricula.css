@@ -122,12 +122,6 @@
   padding: 5px;
 }
 
-
-.opcao li.activo {
-  border-radius: 4px 0 0 4px;
-  background: #BBCCDD;
-}
-
 .escolha-plano label {
   font-family: "Nunito", sans-serif;
   font-size: 1.125rem;
@@ -136,6 +130,20 @@
   color: #18232E;
 }
 
-.none {
+.container-aula-matricula {
+  width: 240px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 4px rgba(0,0,0,.2);
+  border-radius: 4px;
+  display: grid;
+  justify-content: center;
+}
+
+.container-aula-matricula {
   display: none;
+}
+
+.container-aula-matricula.ativo {
+  display: block;
 }
