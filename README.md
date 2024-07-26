@@ -1,3 +1,3 @@
 # Surfbot
 
-Projeto feito com o proposito de praticar minhas habilidades de HTML, CSS e JavaScript. O design do projeto foi inicialmente criado no curso de UI Design Avançado da Origamid, porém todo o código foi feito por mim, sem ajuda de terceiros.
+Este projeto foi desenvolvido com o objetivo de aprimorar minhas habilidades em HTML, CSS e JavaScript. O design inicial foi criado durante o curso de UI Design Avançado da Origamid, mas todo o código foi escrito por mim, sem a ajuda de terceiros.
