@@ -134,7 +134,7 @@
   width: 240px;
   background: #fff;
   padding: 30px;
-  box-shadow: 0 4px 4px rgba(0,0,0,.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
   border-radius: 4px;
   display: grid;
   justify-content: center;
@@ -146,4 +146,19 @@
 
 .container-aula-matricula.ativo {
   display: block;
+}
+
+@media (max-width: 800px) {
+  .escolha {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .escolha-plano {
+    display: none;
+  }
+
+  .titulo {
+    font-size: 3.75rem;
+  }
 }

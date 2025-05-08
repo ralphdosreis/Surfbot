@@ -24,7 +24,7 @@
   width: 240px;
   background: #fff;
   padding: 30px;
-  box-shadow: 0 4px 4px rgba(0,0,0,.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
   border-radius: 4px;
   display: grid;
   justify-content: center;
@@ -45,7 +45,8 @@
   margin-bottom: 30px;
 }
 
-.vantagens-aula::before, .vantagens-aula::after {
+.vantagens-aula::before,
+.vantagens-aula::after {
   content: '';
   display: inline-block;
   height: 2px;
