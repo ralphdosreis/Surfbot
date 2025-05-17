@@ -23,6 +23,7 @@
   .footer {
     padding: 30px 10px;
   }
+
   .footer h1 {
     font-size: 1.5rem;
   }
@@ -31,5 +32,9 @@
 @media (max-width: 600px) {
   .footer h1 {
     font-size: 1.25rem;
+  }
+
+  .prancha-footer {
+    display: none;
   }
 }
