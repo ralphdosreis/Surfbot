@@ -1,9 +1,9 @@
 export default function initActiveOption() {
   const opcoes = document.querySelectorAll('.opcao li');
   const escolha = document.querySelectorAll('.container-aula-matricula');
-
-  escolha[0].classList.add('ativo');
-
+  if (document.URL.includes("matricula")) {
+    escolha[0].classList.add('ativo');
+  }
   if (opcoes && escolha) {
     function activeEscolha(index) {
       escolha.forEach((escolhido) => {

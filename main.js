@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./js/modules/opcao.js":
+/*!*****************************!*\
+  !*** ./js/modules/opcao.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initActiveOption)\n/* harmony export */ });\nfunction initActiveOption() {\n  var opcoes = document.querySelectorAll('.opcao li');\n  var escolha = document.querySelectorAll('.container-aula-matricula');\n  if (document.URL.includes(\"matricula\")) {\n    escolha[0].classList.add('ativo');\n  }\n  if (opcoes && escolha) {\n    var activeEscolha = function activeEscolha(index) {\n      escolha.forEach(function (escolhido) {\n        escolhido.classList.remove('ativo');\n      });\n      escolha[index].classList.add('ativo');\n    };\n    opcoes.forEach(function (opcao, index) {\n      opcao.addEventListener('click', function () {\n        activeEscolha(index);\n      });\n    });\n  }\n}\n\n//# sourceURL=webpack://surfbot/./js/modules/opcao.js?");
+
+/***/ }),
+
 /***/ "./js/modules/outsideclick.js":
 /*!************************************!*\
   !*** ./js/modules/outsideclick.js ***!
@@ -56,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_scroll_suave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/scroll-suave.js */ \"./js/modules/scroll-suave.js\");\n/* harmony import */ var _modules_valor_debitado_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/valor-debitado.js */ \"./js/modules/valor-debitado.js\");\n/* harmony import */ var _modules_menu_mobile_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menu-mobile.js */ \"./js/modules/menu-mobile.js\");\n\n// import initActiveOption from './modules/opcao.js';\n\n\n(0,_modules_scroll_suave_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n// initActiveOption();\n(0,_modules_valor_debitado_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\nvar menuMobile = new _modules_menu_mobile_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]('[data-menu=\"button\"]', '[data-menu=\"list\"]');\nmenuMobile.init();\n\n//# sourceURL=webpack://surfbot/./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_scroll_suave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/scroll-suave.js */ \"./js/modules/scroll-suave.js\");\n/* harmony import */ var _modules_opcao_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/opcao.js */ \"./js/modules/opcao.js\");\n/* harmony import */ var _modules_valor_debitado_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/valor-debitado.js */ \"./js/modules/valor-debitado.js\");\n/* harmony import */ var _modules_menu_mobile_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/menu-mobile.js */ \"./js/modules/menu-mobile.js\");\n\n\n\n\n(0,_modules_scroll_suave_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_modules_opcao_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n(0,_modules_valor_debitado_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\nvar menuMobile = new _modules_menu_mobile_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]('[data-menu=\"button\"]', '[data-menu=\"list\"]');\nmenuMobile.init();\n\n//# sourceURL=webpack://surfbot/./js/script.js?");
 
 /***/ }),
 
