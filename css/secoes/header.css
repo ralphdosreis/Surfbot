@@ -55,18 +55,37 @@
   .header {
     padding: 10px;
   }
+
   .header-menu {
     gap: 20px
   }
+
   .header-menu a {
     padding: 10px 15px;
     background: #223344;
     border-radius: 4px;
   }
+
   .header-menu li:nth-child(-n+3)::after {
     display: none;
   }
+
   .header-menu li:last-child a::after {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu a {
+    padding: 0px 10px;
+  }
+
+  .header-menu a {
+    font-size: .8rem;
+  }
+
+  .header-menu li {
+    margin-bottom: 7px;
+    margin-left: 5px;
   }
 }
